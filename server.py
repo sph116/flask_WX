@@ -119,7 +119,7 @@ def Reply_user():
     :return:
     """
 
-    que_dict, ans_dict = extract_que('./data/hk_ques_data（APRIL_20200226).xlsx')   # 加载问题及回复信息
+    que_dict, ans_dict = extract_que('./ques_data.xlsx')   # 加载问题及回复信息
     req_key_word = que_dict.keys()                                                  # 所有可回复的关键词
 
     wechat_send_data = request.data                           # 接收消息提醒 为xml格式
