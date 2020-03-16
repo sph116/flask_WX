@@ -7,8 +7,8 @@ class Operation_Redis():
     """
 
     def __init__(self):
-        self.host = "localhost"
-        self.psw = "qq1362441"
+        self.host = ""
+        self.psw = ""
         self.port = 6379
         self.db = 6
         self.pool = redis.ConnectionPool(host=self.host, password=self.psw, port=self.port, db=self.db, max_connections=50)
