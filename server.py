@@ -101,7 +101,7 @@ def Check_token():
     nonce = request.args.get('nonce')
     echostr = request.args.get('echostr')
     try:
-        check_signature(token='jxgj8888', signature=signature, timestamp=timestamp, nonce=nonce)  # 使用wechat库验证
+        check_signature(token='验证token', signature=signature, timestamp=timestamp, nonce=nonce)  # 使用wechat库验证
     except InvalidSignatureException as e:
         print(e)
         return ''
